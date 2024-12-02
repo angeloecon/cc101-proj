@@ -14,8 +14,8 @@
 </head>
 <body>
   <video autoplay muted loop id="myVideo">
-    <!-- <source src="./assets/moonlit-night-kimi-no-na-wa-moewalls-com.mp4" type="video/mp4"> -->
-    <source src="./assets/the-boy-staring-into-the-night-sky-moewalls-com.mp4" type="video/mp4">
+    <source src="./assets/moonlit-night-kimi-no-na-wa-moewalls-com.mp4" type="video/mp4">
+    <!-- <source src="./assets/the-boy-staring-into-the-night-sky-moewalls-com.mp4" type="video/mp4"> -->
   </video>
 
 
@@ -45,10 +45,10 @@
 
     <section id="second" class="sctn uc">
       <div class="profile-section">
-        <img class="profile-pic" src="https://picsum.photos/200/500" alt="">
+        <img class="profile-pic" src="./assets/myPic/animated-profile.png" alt="">
         <div class="text-section">
           <h1>Hello, Im Angelo</h1>
-          <p>I'm a student with a strong passion for technology and software development. I’m an aspiring full-stack developer, eager to master both front-end and back-end technologies. I enjoy problem-solving, learning new programming languages, and working on innovative projects. My goal is to build user-friendly, efficient, and scalable applications while continuously expanding my skills in the ever-evolving field of IT.</p>
+          <p>I'm a student with a strong passion for technology and software development. I'm an aspiring full-stack developer, eager to master both front-end and back-end technologies. I enjoy problem-solving, learning new programming languages, and working on innovative projects. My goal is to build user-friendly, efficient, and scalable applications while continuously expanding my skills in the ever-evolving field of IT.</p>
         </div>
       </div>
     </section>
@@ -64,19 +64,19 @@
         <div class="summary-content" id="content-0">
           <h3>My Educational Background</h3>
           <div class="school-container">
-            <div>
+            <div class="school-card">
               <img src="./assets/school_logo/Magallanes.png" width="100px" alt="">
               <h4>Magallanes <br> Elementary <br> School</h4>
             </div>
-            <div>
+            <div class="school-card">
               <img src="./assets/school_logo/sta ana.png" width="100px" alt="">
               <h4>Sta Ana National <br> High School</h4>
             </div>
-            <div>
+            <div class="school-card">
               <img src="./assets/school_logo/ama_senior_high_logo_by_shadearino_dcbntrg-pre.png" width="100px" alt="">
               <h4>AMA Computer <br>College of Davao</h4>
-            </div>
-            <div>
+            </div >
+            <div class="school-card">
               <img src="./assets/school_logo/HCDC.png" height="100px" alt="">
               <h4>Holy Cross <br>Davao College</h4>
               <p>(Ongoing)</p>
@@ -84,12 +84,12 @@
           </div>  
         </div>
         <div class="summary-content" id="content-1">
-          <h4>My Skills</h4>
-          <ul>
-            <li>I have knowledge in troubleshooting computer, hardware and software.</li>
-            <li>Familiar with Python and JavaScript for scripting and web development.</li>
-            <li>Proficient in object-oriented programming, debugging, and working with advanced pointers in C++.</li>
-            <li>Experienced in teamwork and problem-solving, especially in academic projects and community initiatives.</li>
+          <h3>My Skills</h3>
+          <ul class="lists-container">
+            <li class="lists lists-left">I have knowledge in troubleshooting computer, hardware and software.</li>
+            <li class="lists lists-right">Familiar with Python and JavaScript for scripting and web development.</li>
+            <li class="lists lists-left">Proficient in object-oriented programming, debugging, and working with advanced pointers in C++.</li>
+            <li class="lists lists-right">Experienced in teamwork and problem-solving, especially in academic projects and community initiatives.</li>
           </ul>
         </div>
         <div class="summary-content" id="content-2">
@@ -151,47 +151,53 @@
       <div class="summary-container">
         <div class="summary" onclick="toggleContent(3)">Hobbies</div>
         <div class="summary" onclick="toggleContent(4)">Favorite Bands</div>
-        <div class="summary" onclick="toggleContent(5)">About Me</div>
+        
       </div>
       <div class="summary-content" id="content-3">
         <h3>My Hobbies</h3>
-        <ul>
-          <li>Reading</li>
-          <li>Scrolling in Reels</li>
-          <li>In my free time, I enjoy coding small projects</li>
-          <li>I love exploring nature and reading e-books about programming."</li>
-          <li>In my spare time, i love to take rest and sleep</li>
-          <li>Watching Videos and Movies</li>
-          <li>Playing Online Games</li>
-          <li>Listening on Music</li>
+        <ul class="lists-container">
+          <li class="lists lists-left">Reading</li>
+          <li class="lists lists-right">Scrolling Reels</li>
+          <li class="lists lists-left">In my free time, I enjoy coding small projects</li>
+          <li class="lists lists-right">I love exploring nature and reading e-books about programming.</li>
+          <li class="lists lists-left">In my spare time, i love to take rest and sleep</li>
+          <li class="lists lists-right">Watching Videos and Movies</li>
+          <li class="lists lists-left">Playing Online Games</li>
+          <li class="lists lists-right">Listening on Music</li>
         </ul>
       </div>
       <div class="summary-content" id="content-4">
         <h3>My Favorite Bands</h3>
         <div class="slideshow-container">
           <div class="mySlides fade">
-            <div class="numbertext">1 / 4</div>
-            <a href="https://www.deviantart.com/justalittlevoice/art/The-Fray-Wallpaper-1680x1050-220974718">Credits</a>
+            <div class="numbertext">1 / 5</div>
+            <a href="https://www.deviantart.com/justalittlevoice/art/The-Fray-Wallpaper-1680x1050-220974718" target="_blank">Credits</a>
             <img src="./assets/Band_img/the_fray_wallpaper_1680x1050_by_justalittlevoice_d3nk96m.png">
           </div>
         
           <div class="mySlides fade">
-            <div class="numbertext">2 / 4</div>
-            <a href="https://www.deviantart.com/brian502/art/My-Chemical-Romance-WP1-128548630">Credits</a>
+            <div class="numbertext">2 / 5</div>
+            <a href="https://www.deviantart.com/brian502/art/My-Chemical-Romance-WP1-128548630"  target="_blank">Credits</a>
             <img src="./assets/Band_img/my_chemical_romance_wp1_by_brian502_d24j8ra.jpg">
           </div>
         
           <div class="mySlides fade">
-            <div class="numbertext">3 / 4</div>
-            <a href="https://www.deviantart.com/thelastrunaway/art/Maroon-5-312065297">Credits</a>
+            <div class="numbertext">3 / 5</div>
+            <a href="https://www.deviantart.com/thelastrunaway/art/Maroon-5-312065297"  target="_blank">Credits</a>
             <img src="./assets/Band_img/maroon_5_by_thelastrunaway_d55sn4h.jpg" >
           </div>
           
           <div class="mySlides fade">
-            <div class="numbertext">4 / 4</div>
-            <a href="https://www.deviantart.com/neoproevo/art/Coldplay-Wallpaper-1019249125">Credits</a>
+            <div class="numbertext">4 / 5</div>
+            <a href="https://www.deviantart.com/neoproevo/art/Coldplay-Wallpaper-1019249125"  target="_blank">Credits</a>
             <img src="./assets/Band_img/coldplay_wallpaper_by_neoproevo_dguu1np.png">
           </div>  
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <a href="https://www.theaudiodb.com/artist/111234-Keane"  target="_blank">Credits</a>
+            <img src="./assets/Band_img/keane.jpg">
+          </div> 
 
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -204,10 +210,8 @@
           </div>
         </div>
       </div>
-      <div class="summary-content" id="content-5">
-        <p>Hi im Angelo, 23 years old </p>
-      </div>
-  </div>
+      
+    </div>
     </section>
     <section id="fourth" class="sctn uc">
       <h1>Contact Me</h1>
@@ -221,27 +225,33 @@
             <a href="https://x.com/GeLow7341" target="_blank"><i class="fa-brands fa-x-twitter icon"></i></a>
           </li>
           <li>
-            <a href="#" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
+            <a href="#" ><i class="fab fa-linkedin-in icon"></i></a></li>
           <li>
-            <a href="mailto:econ7341@gmail.com" target="_blank"><i class="fab fa-google-plus-g icon"></i></a></li>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=econ7341@gmail.com" target="_blank"><i class="fab fa-google-plus-g icon"></i></a></li>
         </ul>
       </div>
       <div class="form-container">
-        <h2>Get in touch</h2>
-        <form>
+        <h2>Message Me</h2>
+        <form method="POST" id="form">
+
+          <input type="hidden" name="access_key" value="073ec92f-3d81-41a3-b892-0b41a71d720d">
             <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required placeholder="Enter Full Name" autocomplete="off">
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required placeholder="Enter Email Address" autocomplete="off">
             </div>
             <div class="form-group">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message" required placeholder="Enter Message"></textarea>
             </div>
-            <button type="submit">Send</button>
+
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <div id="result"></div>
+            <button type="submit"><span></span> Send</button>
         </form>
     </div>
     </section>
