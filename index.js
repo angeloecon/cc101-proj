@@ -1,5 +1,4 @@
 const sections = document.querySelectorAll('section');
-
 const navLinks = document.querySelectorAll('.nav-link');
 const contents = document.querySelectorAll('.summary-content');
 const closeSvg = document.querySelector('.close-svg');
@@ -104,7 +103,6 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
-
 const form = document.getElementById('form');
 const result = document.getElementById('result');
 
@@ -117,7 +115,7 @@ form.addEventListener('submit', function (e) {
   console.log(formData);
   console.log(object);
   console.log(json);
-  result.innerHTML = "Please wait..."
+  result.style.display = "block"
 
   fetch('https://api.web3forms.com/submit', {
     method: 'POST',
@@ -131,7 +129,6 @@ form.addEventListener('submit', function (e) {
       let json = await response.json();
       if (response.status == 200) {
         result.innerHTML = "Form submitted successfully";
-
         result.classList.add("success");
       } else {
         console.log(response);
